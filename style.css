@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #d4d4d4;
+    font-family: sans-serif;
+}
+body {
+}
+
+.section-division {
+    display: grid;
+    grid-template-columns:repeat(3, 20% 50% 30%);
+    margin: 0;
+    width: 100%;
+    background-color: black;
+}
+
+.nav-column {
+    padding: 5px 20px 10px 50px;
+}
+nav ul {
+    list-style-type:none;
+}
+.nav-container {
+    position: sticky;
+    top:0px;
+}
+nav ul li {
+    display:block;
+    padding:13px 20px;
+}
+a {
+    display:flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: left;
+}
+a img {
+    margin: 10px;
+}
+a label {
+    margin:10px;
+}
+a:hover{
+    background-color:#03A9F4;
+    border-radius:30px;
+}
+.trending-container {
+    border-radius: 20px;
+    margin: 0px auto;
+    padding: 20px;
+    position: fixed;
+    width:90%;
+}
+.input-container {
+    margin: 0px auto;
+    padding: 0px 0px;
+}
+.btn-submit{
+    padding: 10px 20px;
+    font-size: 12px;
+    background-color:#03A9F4;
+    color:#d4d4d4;
+    border-radius:20px;
+    width:auto;
+    height: auto;
+    display: flex;
+}
+button {
+    width: 100%;
+    height: auto;
+    padding:20px;
+    border:none;
+    outline:none;
+    background-color:#03A9F4;
+    border-radius:30px;
+}
+.btn {
+    width: auto;
+    height: auto;
+    padding:10px 20px;
+    border:none;
+    outline:none;
+    background-color:#03A9F4;
+    border-radius:20px;
+    margin-right:20px;
+}
+.flex-home-icon {
+    display:flex;
+    justify-content: space-between;
+    padding:20px;
+}
+
+.post-column {
+    border-left:1px solid #4F555B;
+    border-right: 1px solid #4F555B;
+}
+
+.profile-tweet {
+    display:flex;
+    padding: 10px;
+}
+.profile-pics {
+    margin: 10px;
+}
+.profile-pics img{
+    border-radius: 50%;
+    width: 80px;
+    height:80px;
+}
+.logo-list img{
+    margin: 5px;
+}
+
+.tweet {
+    width: 100%;
+    padding-top:30px;
+}
+
+.people-tweet {
+    width: 100%;
+    padding-top:0px;
+}
+.tweet textarea{
+    height: 80px;
+    width:100%;
+    border:none;
+    outline: none;
+    border-bottom:1px solid #4F555B;
+    background-color:black;
+    color:blue;
+}
+.image-tweet {
+    display:flex;
+    justify-content:space-between;
+    padding: 10px;
+    width:100%;
+}
+
+.tweet-num {
+    border: 1px solid #4F555B;
+    border-left: none;
+    border-right:none;
+}
+.tweet-num p{
+    color: blue;
+    text-align:center;
+    padding: 20px;
+}
+.retweet-list {
+    display: flex;
+    justify-content: space-between;
+}
+hr {
+    border: 1px solid #4F555B;
+}
+input {
+    height: 50px;
+    width: 90%;
+    border-radius:25px;
+    background-color:#15181C;
+    outline:none;
+    border:none;
+    font-size: 12px;
+    font-family: sans-serif;
+    margin: 0px auto 20px auto;
+    padding:0px 20px;
+    /* background-image: url(img);
+    background-repeat: no-repeat;
+    background-position:-20px -40px; */
+
+}
+.card-trend {
+    background-color:#15181C;
+    border-radius: 15px;
+    padding: 20px;
+}
+.flexing-code {
+    margin: 40px auto;
+    color:black;
+    display:flex;
+    justify-content: space-between;
+}
+.tweet-num p{
+    color:#03A9F4;
+}
+.tweet-num:hover{
+    background-color: #03A9F4;
+    color:white;
+}
+.tweet-num p:hover{
+    color:white;
+}
+
+.flexing-code h1 {
+    font-size: 18px;
+    font-weight:100px;
+}
+
+.flexing-code:first-child{
+    margin-top:10px;
+}
+.flexing-code label{
+    color:#4F555B;
+}
+.grid-columns {
+    width: 100%;
+}
+
+@media (max-width:1224px) {
+    .section-divison{
+        display:block;
+    }
+    .nav-column{
+        padding-left:15px;
+    }
+}
+@media (max-width:858px) {
+        .section-division{
+            display:block;
+        }
+        .nav-column{
+            display:none;
+        }
+        .trending-container{
+            display:none;
+        }
+        .post-column{
+            border-left:none;
+            border-right:none;
+        }
+}
+
+@media (max-width:600px){
+    .section-division{
+        display:block;
+    }
+    .nav-column{
+        display:none;
+    }
+    .trending-container{
+        display:none;
+    }
+    .post-column{
+        border-left:none;
+        border-right:none;
+    }
+    .heading-class{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .btn {
+        padding:5px;
+        border-radius:5px;
+        height:auto;
+        margin:5px;
+    } 
+}
